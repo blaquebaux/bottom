@@ -59,8 +59,16 @@ the honest caveats make the true bottom worse than measured: the basket is **sur
 **large caps** (Bore / Blunt #5) — the bottom adds cost, noise, and survivorship illusion, not edge.
 
 ## Status
-**Research: first pass complete — null** (`research/`). No cap-ladder edge; the bounce is a
-large-cap play. No live driver. Nothing validated to the spine's bar.
+**Research: first pass complete; large-cap drawdown-bounce — standalone driver built** (`research/` +
+`live/`). The penny/cap-ladder edge was rejected; the keeper is the large-cap pullback.
+
+`live/bottom_live.jl` runs the drawdown-bounce on its own through the engine's governed order path +
+Layer-3 safety gate: long the most-fallen quintile of quality large caps by trailing 60-day return,
+equal-weight. **Dry-run by default** (logs the target, places nothing); graduates to Alpaca paper with
+its own isolated keys/ledger. Not validated to the spine's bar.
+```bash
+BB_DRYRUN=1 julia --project=engine live/bottom_live.jl    # compute + log today's book, no orders
+```
 
 ## The Blaque Baux family
 This repo is one sleeve of the **Blaque Baux** family — a single governed engine steered in
