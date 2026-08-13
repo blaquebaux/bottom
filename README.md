@@ -2,7 +2,7 @@
 
 **Bottom of the barrel. Sub-small-cap, micro/nano-cap, and penny names — the least efficient, least liquid, most treacherous corner of the market.**
 
-Bottom is a member of the Blaque Baux family. The [core repo](https://github.com/Carter-Warrens/blaquebaux)
+Bottom is a member of the Blaque Baux family. The [core repo](https://github.com/blaque-baux/base)
 is the **engine and blueprint**. Bottom points that engine at the bottom of the market-cap
 ladder, where mispricing is largest — and so are transaction costs, liquidity risk,
 delisting, and outright fraud. This is the corner where the engine's governance matters
@@ -13,7 +13,7 @@ difference between an edge and a blow-up.
 > extreme liquidity, delisting, and fraud risk. Nothing here is validated. See [LICENSE](LICENSE).
 
 ```bash
-git clone --recursive https://github.com/Carter-Warrens/blaquebaux-bottom.git
+git clone --recursive https://github.com/blaque-baux/bottom.git
 julia --project=engine -e 'using Pkg; Pkg.instantiate()'   # one-time engine setup
 ```
 
@@ -84,12 +84,12 @@ honest research, reproducible evidence, and execution you can trust — is why C
 
 ## The Blaque Baux family
 This repo is one sleeve of the **Blaque Baux** family — a single governed engine steered in
-many directions. The [core repo](https://github.com/Carter-Warrens/blaquebaux) is the
-base/blueprint and holds the [full family roster](https://github.com/Carter-Warrens/blaquebaux#the-blaque-baux-family).
+many directions. The [core repo](https://github.com/blaque-baux/base) is the
+base/blueprint and holds the [full family roster](https://github.com/blaque-baux/base#the-blaque-baux-family).
 
 ## Layout
 ```
-engine/     the Blaque Baux platform (git submodule → Carter-Warrens/blaquebaux)
+engine/     the Blaque Baux platform (git submodule → blaque-baux/base)
 research/   two Path-A sketches (bounce by cap tier, cap tiers) + scorecard
 live/       governed live drivers (once a sleeve graduates to paper A/B)
 ```
